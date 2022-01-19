@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog Page</title>
+        <link rel="stylesheet" href="blog.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <nav class="navigacija" id="pocetak">
+            <li><a href="../Pocetna/pocetna.html">POČETNA</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="../Galerija 1/galerija1.html">GALERIJA 1</a></li>
+            <li><a href="../Galerija 2/galerija2.html">GALERIJA 2</a></li>
+        </nav>
+        <div class="sadrzaj">
+            <div class="content">
+                <header>FLEXBOX</header>
+                <p><a href="#flexbox1">Šta je flexbox?</a></p>
+                <p><a hreF="#flexbox3">Flexbox properties</a></p>
+                <p><a hreF="#flexbox4">Flex-direction</a></p>
+                <p><a hreF="#flexbox5">Flex-direction(examples)</a></p>
+                <p><a hreF="#flexbox6">Justify-content</a></p>
+                <p><a hreF="#flexbox7">Align-items</a></p>
+                <p><a hreF="#flexbox8">Flex-wrap</a></p>
+            </div>
+            <div class="content">
+                <header>GRID</header>
+                <p><a href="#grid1">Šta je grid?</a></p>
+                <p><a href="#grid2">Grid properties</a></p>
+                <p><a href="#grid3">Grid-template-rows/Grid-template-columns</a></p>
+                <p><a href="#grid4">Grid-template-rows/Grid-template-columns(example)</a></p>
+                <p><a href="#grid5">Grid-gap</a></p>
+                <p><a href="#grid6">Grid-column-start/end i grid-row-start/end</a></p>
+            </div>    
+
+        </div>
+        <div class="blog">
+            <div class="pagecontent">
+                <div class="maincontent1"><!--Novi class da bi mogao snap staviti na navbar-->
+                    <header id="flexbox1">FLEXBOX</header>
+                    <p>Flexbox Layout ili drugim rijecima Flexible Box je nastao 2017 godine kao jednostavniji nacin za kreiranje Layout-a(centriranje,pozicioniranje i razmjestaj u odredjenim kontejnerima).
+                    <p>Jedna od glavnih i mozda najboljih osobina Flexboxa je kao sto i njegovo ime kaze je da je fleksibilan.</p>
+                    <p>Drugim rijecima receno prilagodjava se na velicinu i sirinu ekrana bez obzira od uredjaja na kojem ga koristili i tako sprijecava desavanje Overflowa</p>
+                    </p>
+                    <span class="underline_p_tag">
+                        Pokusajte razvlaceci sirinu i visinu contenta(vidjecete da se sadrzaj skuplja-siri u odnosu na velicinu browsera u kojem se nalazi)
+                    </span>
+                    <iframe src="./flexbox.html"></iframe>
+                </div>
+
+                <div class="maincontent">
+                    <header id="flexbox2">KREIRANJE FLEXBOX</header>
+                    <p>Flexbox kreiramo u CSS-u tako sto parentu(u primjeru ispod Container koji sadrzi Container1 i Container2 je parent) postavimo odredjeni selector( preko klase, taga ili ID-a) display na flex(inline ili block u zavisnosti od toga sta zelimo kreirati).
+                    </p>
+                    <img class="displayflexslika" src="displayflex.png" alt="displayflex">
+                    
+                    <iframe src="./flexbox1.html"></iframe>
+                </div>
+                <div class="maincontent">
+                    <header id="flexbox3">FLEXBOX PROPERTIES</header>
+                    <p>Za flexbox postoji stvarno puno osobina al ovde cu pokazati samo neke osnovne koje su najkorisnije za sortiranje/podesavanje blockova pomocu flexboxa</p>
+                    <p>Neke od njih su:</p>
+                    <ul>
+                        <li>flex-direction</li>
+                        <li>justify-content</li>
+                        <li>align-items</li>
+                        <li>flex-wrap</li>
+                    </ul>
+
+                    <p>Dodatna svojstva flexboxa mozete pronaci <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Ovde</a></p>
+                </div>
+                <div class="maincontent">
+                    <header id="flexbox4">FLEX-DIRECTION</header>
+                    <p>Kreiranjem obicnog parent containera i postavljajuci mu display na flex vidimo da su containeri poredani jedan iza drugog(i to prvi div sa klasom container1 pa onda div sa klasom container2).</p>
+                    
+                    <iframe src="./flexbox1.html"></iframe>
+                    
+                    <p>Kada postavimo display na flex, on po defaultu inicijalizira flex-direction na row zato dobijamo containere jedan iza drugog</p>
+                    <p>U slucaju da zelimo promjeniti smijer sortiranja containera mozemo dodjeljivajuci parentu(Container) jednu od sljedecih naredbi</p>
+                    <p><br<br><strong>Flex-direction:</strong></p>
+                    <ul>
+                        <li>row</li>
+                        <li>row-reverse</li>
+                        <li>column</li>
+                        <li>column-reverse</li>
+                    </ul>
+
+                </div>
+                <div class="maincontent">
+                    <header id="flexbox5">FLEX-DIRECTION EXAMPLES</header>
+                    <div class="picture_container">
+                        <div class="block-container">
+                            <img src="row-reverseexample.png" alt="row-reverseexample" height="400px" width="400px">
+                            <p><strong>row-reverse</strong></p>
+                        </div> 
+                        <div class="block-container">
+                            <img src="column-example.png" alt="row-reverseexample" height="400px" width="400px">
+                            <p><strong>Column</strong></p>
+                        </div> 
+                        <div class="block-container">
+                            <img src="column-reverseexample.png" alt="row-reverseexample" height="400px" width="400px">
+                            <p><strong>Column-reverse</strong></p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="maincontent">
+                    <header id="flexbox6">JUSTIFY CONTENT</header>
+                   <p>Justify content odredjuje poziciju tj raspored child tagova(u ovom slucaju container1 i container2).</p>
+                   <p>Ako je <strong>flex-direction:row</strong> onda ce taj raspored biti po <strong>x osi</strong></p>
+                   <p>A u slucaju da je <strong>flex-direction:column</strong> onda ce taj raspored biti po <strong>y osi</strong></p>
+                    <img src="justify-content examples.png" alt="justify-contentexample">
+                </div>
+                <div class="maincontent">
+                    <header id="flexbox7">ALIGN ITEMS</header>
+                   <p>Align items  takodje odredjuje poziciju tj raspored child tagova(u ovom slucaju container1 i container2).</p>
+                   <p>Samo sto ce ovog puta Ako je <strong>flex-direction:row</strong> onda ce taj raspored biti po <strong>x osi</strong></p>
+                   <p>A u slucaju da je <strong>flex-direction:column</strong> onda ce taj raspored biti po <strong>x osi</strong></p>
+                    <img src="align-itemsexample.png" alt="align-itemsexample">
+                </div>
+                <div class="maincontent">
+                    <header id="flexbox8">FLEX WRAP</header>
+                   <p>Po defaultu kada kreiramo flex.. child tagovi(u ovom primjeru div-ovi) ce pokusati da stanu svi u jednom redu</p>
+                   <p>U slucaju da zelimo to promjeniti mozemo sa sljedecom komandom:</p>
+                   <p><strong>flex-wrap:</strong></p>
+                   <ul>
+                       <li>nowrap(itemi ce bit u jednom redu)</li>
+                       <li>wrap(itemi ce ako ne mogu stati u browseru preci u novi red i to u smijeru odozgo prema dolje)</li>
+                       <li>wrap-reverse(itemi ce ako ne mogu stati u browseru preci u novi red u smijeru odozdo prema gore)</li>
+                    </ul>
+                    <p><strong>Primjer za flex-wrap:wrap... ostale mozete probati sami</strong></p>
+                        <iframe src="./mobilewrap.html"></iframe>
+                </div>
+
+                <div class="maincontent">
+                    <header id="grid1">GRID</header>
+                    <p>Grid Layout ili samo skraceno Grid je takodje nastao 2017. god kao novi nacin kreiranja tabela/tabelarnog rasporeda komponenti na stranici</p>
+                    <p>Razlika izmedju tabel-a u htmlu i grida je sto grid kreiramo preko CSS-a i preko css-a odredjujemo raspored celija u tabeli..</p>
+                    <p>Drugim rijecima citavu tabelu(grid) od kreiranja do manipulacije radimo preko CSS-a.</p>
+                    <p>Grid se vecinom koristi za organizaciju web content-a tj.uredjivanje page-a dok table se vecinom koristi za prikaz podataka(mada moze i grid-om se to isto postići)
+                    <p>Grid je takodje responsive isto kao i flexbox</p>
+                    <iframe src="./grid.html"></iframe>
+
+
+                </div>
+
+                <div class="maincontent">
+                    <header id="grid2">GRID PROPERTIES </header>
+                    <p>Sto se tice osobina Grida... ona je doista obimna i da bih prosao kroz svaku osobinu mislim da bi trebalo puno vremena tako da cu odvojiti samo one "bitne" za kreiranje i manipulacijom pomocu GRID-a</p>
+                    <p>Grid kreiramo na slican nacin kao i flexbox samo umjesto kljucne rijeci <strong>display:flex</strong> koristimo kljucnu rijec <strong>display:grid</strong></p>
+                        <img src="gridinicijalizacija.png" alt="displaygridpic">
+
+                    <p><br>Neke od osnovnih osobina koje cemo preci su:</p>
+                    <ul>
+                        <li>grid-template-columns</li>
+                        <li>grid-template-rows</li>
+                        <li>grid-gap</li>
+                        <li>grid-column-start/grid-column-end</li>
+                        <li>grid-row-start/grid-row-end</li>
+                    </ul>
+                </div>
+                <div class="maincontent">
+                    <header id="grid3">GRID-TEMPLATE-ROWS/GRID-TEMPLATE-COLUMNS</header>
+
+                    <p>Pomoću koda <strong>grid-template-rows</strong> kreiramo broj redova koje ce nam tabela sadrzavati i velicinu svakog reda </p>
+                    <p>Kao na primjer:</p>
+
+                    <p><strong>grid-template-rows: 20% 50px auto 20px </strong></p>
+                    <p>Ovom linijom koda kreiramo cetiri reda dimenzija</p>
+                    <ul>
+                        <li>1.red: 20% od velicine taga(npr. div) koji sadrzi tabelu(<strong>display:grid</strong>)</li>
+                        <li>2.red: 50px</li>
+                        <li>3.red: auto(tj. red ce biti automatski postavljen na velicinu da popuni sve sto ostane nepopunjeno sa 1,2 i 4 redom</li>
+                        <li>4.red: 20px</li>
+                    </ul>
+                    <p>Tako isto  pomocu <strong>grid-template-columns: 20% 50px auto 20px</strong> kreiracemo sve kao na primjeru iznad samo sto ce to odredjivati broj kolona i njihove velicine</p>
+                    
+                </div>
+                <div class="maincontent">
+                    <header id="grid4">GRID-TEMPLATE-ROWS/GRID-TEMPLATE-COLUMNS</header>
+
+                    <img src="columns-rows-example.png" alt="exampleforrowandcolumns">
+                    <img src="columns-rows-example2.png" alt="exampleforrowandcolumns2">
+                </div>
+                <div class="maincontent">
+                    <header id="grid5">GRID-GAP</header>
+
+                    <p> Kao i sto ime kaze <strong>GAP</strong> ili u bukvalnom prevodu praznina, sluzi za dodavanje <strong>praznine(razmaka)</strong> izmedju kolona i redova(moze i pojedinacno izmedju kolona ili samo izmedju redova</p>
+                    <p><strong>GRID-GAP</strong> se nekada i inicijalizirao pomocu (<strong>npr.GRID-GAP:50px</strong>) medjutim sada je to izbaceno iz upotrebe i sintaksa je promjenjena pa se koristi samo <strong>GAP</strong> dok je naziv ostao GRID-GAP(valjda da se zna da se odnosi na grid)</p>
+                    <p>Prva vrijednost odredjuje razmak izmedju redova dok druga razmak izmedju kolona</p>
+                    <div class="picture_container">
+                        <img src="grid-gapexamplecode.png" alt="gridgap1">
+                       
+                            <iframe src="./gridgap.html"></iframe>
+                        
+                    </div>
+                </div>
+                <div class="maincontent">
+                    <header id="grid6">GRID-COLUMN-START/END i GRID-ROW-START/END</header>
+                    <p><strong>GRID-COLUMN-START i GRID-COLUMN-END</strong> je slicna stvar kao u table-u <strong>colspan</strong> samo sto ovde imamo pocetnu vrijednost kao i konacnu. tj unosimo od koje kolone ce poceti prosirivanje i na kojoj ce zavrsiti s prosirivanjem odredjena celija</p>
+                    <p>Takodje <strong>GRID-ROW-START i GRID-ROW-END</strong> je slicno sto u table-u <strong>rowspan</strong> samo sto i ovde unosimo pocetnu i krajnju vrijednost koliko ce se neka celija prosiriti</p>
+                        <iframe src="./grid-startiend.html"></iframe>
+                    <p>Za vise informacija o samom gridu mozete pronaci <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Ovde</a></p>
+                </div>
+                <footer class="footer">
+                    <div class="ikone">
+                        <a href="https://www.facebook.com/amelzekovic/" target="_blank"><img src="../Pocetna/facebook.png" alt="facebook ikona"><span>FACEBOOK</span></a>
+                    <a href="https://www.linkedin.com/in/amel-zekovi%C4%87-6828091a9/" target="_blank"><img src="../Pocetna/linkedin.png" alt="linkedin ikona"><span>LINKEDIN</span></a>
+                    <a href="https://github.com/Zeka97" target="_blank"><img src="../Pocetna/github.png" alt="github ikona"><span>GITHUB</span></a>
+                    <a href="#pocetak">Vrati se na pocetak ^</a>
+                    </div>
+                </footer> 
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </body>
+
+
+</html>

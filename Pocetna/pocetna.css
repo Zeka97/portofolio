@@ -1,0 +1,999 @@
+@media only screen and (min-width:1154px)
+{
+html{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  body{
+      margin: 0;
+      height: 100vh;
+      width: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      background-color: black;
+      scroll-behavior: smooth;
+  }
+.pocetna_maincontent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-align:start;
+}
+
+.slika{
+    height: 100vh;
+    width: 40%;
+    object-fit: cover;
+}
+
+.pocetna_mainopis{
+    width: 60%;
+    background-image: url(pocetna_011.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navigacija{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color:white;
+}
+.navigacija li{
+    list-style: none;
+}
+.navigacija li a{
+    text-decoration: none;
+    color:white;
+}
+.navigacija li a:active{
+    color:red;
+}
+.navigacija li a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.maincontent{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.maincontent .slikanatelefonu{
+    display:none;
+}
+
+
+.maincontent_imeiprezime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: white;
+    width: 60%;
+    font-size: 48px;
+    color:black;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 800;
+    
+}
+.maincontent_description{
+    color:white;
+    font-family:'Montserrat',sans-serif; 
+    font-size:32px;
+}
+.maincontent_grid{
+    height: 10%;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    color: white;
+}
+.maincontent_grid_header{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+.maincontent_grid_description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    
+}
+.biografija{
+    background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-01.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    scroll-snap-align: start;
+}
+.biografija_omeni{
+    height: auto;
+    width: 70%;
+    font-size: 17px;
+    font-family:'Montserrat',sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: 300;
+}
+.drustvene_mreze{
+    height: 20%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.drustvene_mreze a:hover{
+    opacity: 0.7;
+}
+
+.naslov{
+    display: flex;
+    height: 10%;
+    padding-top: 5vh;
+    margin-bottom: 3%;
+    justify-content: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+
+.skills{
+    height: 100vh;
+    background-image: url("https://www.capcitycreative.ca/wp-content/uploads/2018/08/design.jpg");
+    background-size: cover;
+    background-position: center;
+    color:white;
+    scroll-snap-align: start;
+}
+.skills_description{
+    height: 70%;
+}
+.skills_opis{
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family:'Montserrat',sans-serif;
+    font-size:17px;
+    margin-bottom: 3%;
+    color:white;
+}
+.skills_opis a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #A3A3A3
+}
+.skills_opis a:hover{
+    cursor: pointer;
+}
+
+.skills_grid{
+    width: 60%;
+    height: 20%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.skills_grid_table{
+    color:white;
+    height: 100%;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    grid-template-columns: 30% 70%;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.forma{
+    scroll-snap-align: start;
+    height: 100vh;
+    background-image: url("https://www.tredence.com/wp-content/uploads/2018/02/person_on_laptop.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.kontaktforma{
+    font-family: 'montserat',sans-serif;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.kontaktforma .text{
+    letter-spacing: 2px;
+    border: none;
+    background: transparent;
+    color:white;
+    margin-bottom: 2%;
+    height: 30px;
+    border:none;
+    border-bottom: 2px solid #A3A3A3;
+}
+.kontaktforma .text:focus{
+    color:white;
+    border: none;
+    outline-style: none;
+    border-bottom:2px solid #A3A3A3; 
+}
+
+
+
+.kontaktforma textarea{
+    background: transparent;
+    letter-spacing: 2px;
+    height: 30%;
+    color:white;
+    border: none;
+    border-bottom:2px solid #A3A3A3; 
+}
+.kontaktforma textarea:focus{
+    outline-style: none;
+    color:white;
+}
+.buttondiv{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.btn_submit{
+    margin-top: 3%;
+    width: 164px;
+    height: 39px;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 800;
+    border-radius: 10px;
+}
+.btn_submit:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.footer{
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.75;
+    height: 50px;
+    width: 90%;
+    bottom: 0;
+    background-color: rgb(24, 23, 23);
+    position: fixed;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.footer:hover{
+    opacity: 1;
+}
+.footer .ikone{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .ikone a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'montserat',sans-serif;
+}
+.footer .ikone a:last-child:hover{
+    border-bottom: 1px solid white;
+}
+.footer .ikone a span{
+    letter-spacing: 3px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.footer .ikone a img{
+    height: 35px;
+    width: auto;
+};
+}
+
+@media screen and (max-width: 1271px)
+{
+html{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  body{
+      margin: 0;
+      height: 100vh;
+      width: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      background-color: black;
+      scroll-behavior: smooth;
+  }
+.pocetna_maincontent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-align:start;
+}
+
+.slika{
+    height: 100vh;
+    width: 40%;
+    object-fit: cover;
+}
+
+.pocetna_mainopis{
+    width: 60%;
+    background-image: url(pocetna_011.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navigacija{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color:white;
+}
+.navigacija li{
+    list-style: none;
+}
+.navigacija li a{
+    text-decoration: none;
+    color:white;
+}
+.navigacija li a:active{
+    color:red;
+}
+.navigacija li a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.maincontent{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.maincontent .slikanatelefonu{
+    display:none;
+}
+
+
+.maincontent_imeiprezime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: white;
+    width: 60%;
+    font-size: 38px;
+    color:black;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 800;
+    
+}
+.maincontent_description{
+    color:white;
+    font-family:'Montserrat',sans-serif; 
+    font-size:32px;
+}
+.maincontent_grid{
+    height: 10%;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    color: white;
+}
+.maincontent_grid_header{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+.maincontent_grid_description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    
+}
+.biografija{
+    background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-01.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    scroll-snap-align: start;
+}
+.biografija_omeni{
+    height: auto;
+    width: 70%;
+    font-size: 17px;
+    font-family:'Montserrat',sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: 300;
+}
+.drustvene_mreze{
+    height: 20%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.drustvene_mreze a:hover{
+    opacity: 0.7;
+}
+
+.naslov{
+    display: flex;
+    height: 10%;
+    padding-top: 5vh;
+    margin-bottom: 3%;
+    justify-content: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+.skills{
+    height: 100vh;
+    background-image: url("https://www.capcitycreative.ca/wp-content/uploads/2018/08/design.jpg");
+    background-size: cover;
+    background-position: center;
+    color:white;
+    scroll-snap-align: start;
+}
+.skills_description{
+    height: 70%;
+}
+.skills_opis{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family:'Montserrat',sans-serif;
+    font-size:13px;
+    margin-bottom: 4%;
+    color:white;
+}
+.skills_opis a{
+ text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #A3A3A3
+}
+.skills_opis a:hover{
+    cursor: pointer;
+}
+
+.skills_grid{
+    width: 60%;
+    height: 20%;
+    margin-bottom: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.skills_grid_table{
+    color:white;
+    height: 100%;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 5px;
+    grid-template-columns: 30% 70%;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.skills_grid_table div{
+    font-size: 10px;
+}
+.skills_grid_table img{
+    height: 15px;
+}
+
+.forma{
+    scroll-snap-align: start;
+    height: 100vh;
+    background-image: url("https://www.tredence.com/wp-content/uploads/2018/02/person_on_laptop.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.kontaktforma{
+    font-family: 'montserat',sans-serif;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.kontaktforma .text{
+    letter-spacing: 2px;
+    border: none;
+    background: transparent;
+    color:white;
+    margin-bottom: 2%;
+    height: 30px;
+    border:none;
+    border-bottom: 2px solid #A3A3A3;
+}
+.kontaktforma .text:focus{
+    color:white;
+    border: none;
+    outline-style: none;
+    border-bottom:2px solid #A3A3A3; 
+}
+
+.kontaktforma textarea{
+    background: transparent;
+    letter-spacing: 2px;
+    height: 30%;
+    color:white;
+    border: none;
+    border-bottom:2px solid #A3A3A3; 
+}
+.kontaktforma textarea:focus{
+    outline-style: none;
+    color:white;
+}
+.buttondiv{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.btn_submit{
+    margin-top: 3%;
+    width: 100px;
+    height: 35px;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 800;
+    border-radius: 10px;
+}
+.btn_submit:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.footer{
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.75;
+    height: 40px;
+    width: 90%;
+    bottom: 0;
+    background-color: rgb(24, 23, 23);
+    position: fixed;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.footer:hover{
+    opacity: 1;
+}
+.footer .ikone{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .ikone a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'montserat',sans-serif;
+}
+.footer .ikone a:last-child:hover{
+    border-bottom: 1px solid white;
+}
+.footer .ikone a span{
+    letter-spacing: 3px;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 10px;
+}
+.footer .ikone a img{
+    height: 25px;
+    width: auto;
+};
+}
+
+@media screen and (max-width: 500px)
+{
+html{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  body{
+      margin: 0;
+      height: 100vh;
+      width: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      background-color: black;
+      scroll-behavior: smooth;
+  }
+.pocetna_maincontent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-align:start;
+}
+
+.slika{
+    display:none;
+    width: 40%;
+    object-fit: cover;
+}
+
+.pocetna_mainopis{
+    width: 100%;
+    background-image: url(pocetna_011.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navigacija{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color:white;
+}
+.navigacija li{
+    list-style: none;
+}
+.navigacija li a{
+    text-decoration: none;
+    color:white;
+}
+.navigacija li a:active{
+    color:red;
+}
+.navigacija li a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.maincontent{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.maincontent .slikanatelefonu{
+    display:block;
+    width: 170px;
+    margin-top:10%;
+    height: 210px;
+    margin-bottom: 10%;
+}
+
+
+.maincontent_imeiprezime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: white;
+    width: 80%;
+    font-size: 18px;
+    color:black;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 800;
+    
+}
+.maincontent_description{
+    color:white;
+    font-family:'Montserrat',sans-serif; 
+    font-size:20px;
+}
+.maincontent_grid{
+    height: 10%;
+    width: 70%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    color: white;
+}
+.maincontent_grid_header{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+.maincontent_grid_description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    
+}
+.biografija{
+    background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-01.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    scroll-snap-align: start;
+}
+.biografija_omeni{
+    height: auto;
+    width: 70%;
+    font-size: 12px;
+    font-family:'Montserrat',sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-weight: 300;
+}
+.biografija_omeni br{content:' ';}
+
+.drustvene_mreze{
+    height: 20%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.drustvene_mreze img{
+    height: 40px;
+    width: 40px;
+}
+.drustvene_mreze a:hover{
+    opacity: 0.7;
+}
+
+.naslov{
+    display: flex;
+    height: 7%;
+    padding-top: 3vh;
+    margin-bottom: 2%;
+    justify-content: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+.skills{
+    height: 100vh;
+    background-image: url("https://www.capcitycreative.ca/wp-content/uploads/2018/08/design.jpg");
+    background-size: cover;
+    background-position: center;
+    color:white;
+    scroll-snap-align: start;
+}
+.skills_description{
+    height: 80%;
+}
+.skills_opis{
+    margin-left:2%;
+    margin-right:2%;
+    font-family:'Montserrat',sans-serif;
+    font-size:12px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color:white;
+}
+.skills_opis p{
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+.skills_opis a{
+ text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #A3A3A3
+}
+.skills_opis a:hover{
+    cursor: pointer;
+}
+
+.skills_grid{
+    width: 70%;
+    margin-top:5%;
+    height: 15%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.skills_grid_table{
+    color:white;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 0;
+    grid-template-columns: 30% 70%;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.skills_grid_table div{
+    font-size: 12px;
+}
+.skills_grid_table img{
+    height: 15px;
+}
+
+.forma{
+    scroll-snap-align: start;
+    height: 100vh;
+    background-image: url("https://www.tredence.com/wp-content/uploads/2018/02/person_on_laptop.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.kontaktforma{
+    margin-top:20%;
+    font-family: 'montserat',sans-serif;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.kontaktforma .text{
+    letter-spacing: 2px;
+    border: none;
+    background: transparent;
+    color:white;
+    margin-bottom: 2%;
+    height: 30px;
+    border:none;
+    border-bottom: 2px solid #A3A3A3;
+}
+.kontaktforma .text:focus{
+    color:white;
+    border: none;
+    outline-style: none;
+    border-bottom:2px solid #A3A3A3; 
+}
+
+
+
+.kontaktforma textarea{
+    background: transparent;
+    letter-spacing: 2px;
+    height: 30%;
+    color:white;
+    border: none;
+    border-bottom:2px solid #A3A3A3; 
+}
+.kontaktforma textarea:focus{
+    outline-style: none;
+    color:white;
+}
+.buttondiv{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.btn_submit{
+    margin-top: 3%;
+    width: 100px;
+    height: 35px;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 800;
+    border-radius: 10px;
+}
+.btn_submit:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.footer{
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.75;
+    height: 40px;
+    width: 90%;
+    bottom: 0;
+    background-color: rgb(24, 23, 23);
+    position: fixed;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.footer:hover{
+    opacity: 1;
+}
+.footer .ikone{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .ikone a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size:15px;
+    color: white;
+    font-family: 'montserat',sans-serif;
+}
+.footer .ikone a:last-child:hover{
+    border-bottom: 1px solid white;
+}
+.footer .ikone a span{
+    display:none;
+}
+.footer .ikone a img{
+    height: 25px;
+    width: auto;
+};
+}

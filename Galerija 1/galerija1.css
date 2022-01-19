@@ -1,0 +1,405 @@
+@media only screen and (min-width:500px)
+{
+html{
+    overflow: hidden;
+}
+
+body{
+    scroll-behavior: smooth;
+    scroll-snap-type:y mandatory;
+    overflow-y: scroll;
+    background-color: black;
+    color: white;
+    font-family: 'montserat',sans-serif;
+    height: 100vh;
+}
+.page1{
+    scroll-snap-align: start;
+    height: 100vh;
+}
+.naslov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    font-weight: 800;
+}
+
+.navigacija{
+    border-bottom: 0.3px solid white;
+    padding-bottom: 20px;
+    margin-top:1%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color:white;
+}
+.navigacija li{
+    list-style: none;
+}
+.navigacija li a{
+    text-decoration: none;
+    color:white;
+}
+.navigacija li a:active{
+    color:red;
+}
+.navigacija li a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.container1:hover .container_grid_box{
+    opacity: 0.2;
+}
+.container1{
+    display: grid;
+    height: 70vh;
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5%;
+}
+.container_grid_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.mutnaslika{
+    object-fit: cover;
+}
+
+.container_grid_box img{
+    width: 100%;
+    height: 80%;
+
+}
+
+.container_grid_box figcaption{
+    font-size: 10px;
+}
+.container_grid_box:nth-child(1):hover{
+    transition-delay: 5s;
+    transform: translate(50%,2%);
+    width: 50vw;
+    height: 70vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+.container_grid_box:nth-child(2):hover{
+    transform: translate(-20%, 2%);
+    width: 50vw;
+    height: 60vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+.container_grid_box:nth-child(3) img:hover{
+    height: 100%;
+    width: 100%;
+}
+.container_grid_box:nth-child(3):hover{
+    transform: translate(-90%, 2%);
+    width: 50vw;
+    height: 60vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+.container_grid_box:nth-child(4):hover{
+    transform: translate(50%, -60%);
+    width: 50vw;
+    height: 80vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+.container_grid_box:nth-child(5):hover{
+    transform: translate(-30%, -60%);
+    width: 50vw;
+    height: 80vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+.container_grid_box:nth-child(6):hover{
+    transform: translate(-95%, -60%);
+    width: 50vw;
+    height: 80vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+
+.container2:hover .container_grid_box2{
+    opacity: 0.3;
+}
+
+.container2{
+    scroll-snap-align: start;
+    display: grid;
+    height: 90vh;
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5%;
+    padding-bottom: 100px;
+}
+.container_grid_box2 img{
+    width: 100%;
+    height: 80%;
+
+}
+.container_grid_box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    transition: 0s;
+}
+
+.container_grid_box2:nth-child(1):hover{
+    transform: translate(50%, 15%);
+    width: 50vw;
+    height: 80vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+
+}
+.container_grid_box2:nth-child(2):hover{
+    transform: translate(-20%, 15%);
+    width: 50vw;
+    height: 80vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+.container_grid_box2:nth-child(3):hover{
+    transform: translate(-100%, 8%);
+    width: 50vw;
+    height: 80vh;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+.container_grid_box2:nth-child(4):hover{
+    transform: translate(60%, -48%);
+    width: 40vw;
+    height: 80vh;
+    transition: 1s;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 1;
+}
+.footer{
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.75;
+    height: 50px;
+    width: 90%;
+    bottom: 0;
+    background-color: rgb(24, 23, 23);
+    position: fixed;
+}
+.footer:hover{
+    opacity: 1;
+}
+.footer .ikone{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .ikone a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'montserat',sans-serif;
+}
+.footer .ikone a:last-child:hover{
+    border-bottom: 1px solid white;
+}
+.footer .ikone a span{
+    letter-spacing: 3px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.footer .ikone a img{
+    height: 35px;
+    width: auto;
+};
+}
+@media only screen and (max-width: 500px)
+{
+    html{
+        overflow: auto;
+    }
+    
+    body{
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        background-color: black;
+        color: white;
+        font-family: 'montserat',sans-serif;
+        height: auto;
+    }
+    .page1{
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .naslov{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        font-weight: 800;
+    }
+    
+    .navigacija{
+        border-bottom: 0.3px solid white;
+        padding-bottom: 20px;
+        margin-top:1%;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        color:white;
+    }
+    .navigacija li{
+        list-style: none;
+    }
+    .navigacija li a{
+        text-decoration: none;
+        color:white;
+    }
+    .navigacija li a:active{
+        color:red;
+    }
+    .navigacija li a:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    .container1:hover .container_grid_box{
+        opacity: 1;
+    }
+    .container1{
+        display: grid;
+        height: auto;
+        width: 100%;
+        grid-template-columns: 100% ;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-gap: 5%;
+    }
+    .container_grid_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .mutnaslika{
+        object-fit: cover;
+    }
+    
+    .container_grid_box img{
+        width: 100%;
+        height: 80%;
+    
+    }
+    .container_grid_box p{
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .container_grid_box figcaption{
+        font-size: 10px;
+    }
+    
+    .container2:hover .container_grid_box2{
+        opacity: 1;
+    }
+    
+    .container2{
+        display: grid;
+        height: auto;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20%;
+        grid-gap: 5%;
+        padding-bottom: 100px;
+    }
+    .container_grid_box2 img{
+        width: 100%;
+        height: 80%;
+    
+    }
+    .container_grid_box2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        transition: 0s;
+    }
+    
+    .footer{
+        margin-left: 5%;
+        margin-right: 5%;
+        opacity: 0.75;
+        height: 40px;
+        width: 90%;
+        bottom: 0;
+        background-color: rgb(24, 23, 23);
+        position: fixed;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+    .footer:hover{
+        opacity: 1;
+    }
+    .footer .ikone{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer .ikone a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-family: 'montserat',sans-serif;
+    }
+    .footer .ikone a:last-child:hover{
+        border-bottom: 1px solid white;
+    }
+    .footer .ikone a span{
+        display:none
+    }
+    .footer .ikone a img{
+        height: 25px;
+        width: auto;
+    };
+
+}

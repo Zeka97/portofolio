@@ -1,0 +1,29 @@
+html,body{
+    margin:0;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: yellow;
+    overflow: hidden;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: green;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+}

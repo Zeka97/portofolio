@@ -1,0 +1,33 @@
+html,body{
+    margin:0;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    background-color: yellow;
+    overflow: hidden;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+.ball{
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+    background-color: black;
+}
